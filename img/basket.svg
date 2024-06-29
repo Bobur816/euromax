@@ -1,0 +1,20 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="transparrent"/>
+<g id="home " clip-path="url(#clip0_132_157)">
+<rect width="1920" height="7685" transform="translate(-1411 -28)" fill="white"/>
+<rect id="Rectangle 3101" x="-1411" y="-28" width="1920" height="80" fill="white"/>
+<g id="basket-2">
+<path id="Vector" d="M8 17.5L5 3.5H3" stroke="#3BAAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M8.25 17.5H18.25" stroke="#3BAAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M18.25 21C19.2165 21 20 20.2165 20 19.25C20 18.2835 19.2165 17.5 18.25 17.5C17.2835 17.5 16.5 18.2835 16.5 19.25C16.5 20.2165 17.2835 21 18.25 21Z" stroke="#3BAAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M8.25 21C9.2165 21 10 20.2165 10 19.25C10 18.2835 9.2165 17.5 8.25 17.5C7.2835 17.5 6.5 18.2835 6.5 19.25C6.5 20.2165 7.2835 21 8.25 21Z" stroke="#3BAAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M5.64282 6.5H19.9994C20.1527 6.5 20.3039 6.53523 20.4414 6.60298C20.5789 6.67073 20.699 6.76919 20.7924 6.89073C20.8858 7.01228 20.95 7.15367 20.98 7.30397C21.0101 7.45428 21.0051 7.60948 20.9657 7.75759L19.3662 13.7576C19.3094 13.9705 19.1839 14.1587 19.0092 14.293C18.8345 14.4272 18.6203 14.5 18.4 14.5H7.35712" stroke="#3BAAFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<circle id="Ellipse 2422" cx="12" cy="12" r="24.5" stroke="#EBEBEB"/>
+</g>
+<defs>
+<clipPath id="clip0_132_157">
+<rect width="1920" height="7685" fill="white" transform="translate(-1411 -28)"/>
+</clipPath>
+</defs>
+</svg>

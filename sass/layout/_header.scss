@@ -1,0 +1,129 @@
+.header {
+  //   background-color: red;
+  margin-top: 60px;
+
+  &__1 {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    @include respond(tab-land) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    gap: 30px;
+    & > div {
+      border-radius: 30px;
+    }
+  }
+
+  &__delivery {
+    position: relative;
+    // width: 360px;
+    min-height: 500px;
+    padding: 30px;
+    background-color: $color-primary-light;
+    overflow: hidden;
+    // display: flex;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    // gap: 35px;
+    flex-direction: column;
+    justify-content: space-between;
+    span {
+      font-weight: 300;
+      line-height: 60px;
+    }
+
+    button {
+      padding: 1.9rem 5rem;
+    }
+
+    &-image {
+      // background-color: red;
+      // height: 50%;
+      // height: 1px;
+      // left: 0;
+      // top: 50%;
+      // transform: translateY(-50%);
+      width: 100%;
+
+      // position: absolute;
+    }
+
+    img {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      max-width: 100%;
+      @include respond(tab-land) {
+        width: 500px;
+      }
+    }
+  }
+
+  &__boxes {
+    // background-color: red;
+    margin-top: 6.5rem;
+    display: grid;
+    max-height: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include respond(tab-land) {
+      // width < 1200?
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include respond(tab-port) {
+      // width < 1200?
+      grid-template-columns: 1fr 1fr;
+    }
+    gap: 3rem;
+  }
+
+  &__box {
+    // background-color: yellow;
+    color: $color-grey-dark-3;
+    // width: 25%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    // align-items: center;
+    // justify-content: flex-start;
+    gap: 20px;
+    padding: 3rem;
+    border-radius: 20px;
+    transition: all 0.3s;
+    border: 1px solid $color-grey-2;
+
+    &-icon {
+      position: relative;
+      display: inline-block;
+      transition: all 0.3s;
+
+      background-color: $color-primary;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &-text {
+      line-height: 25px;
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      border-color: $color-primary;
+    }
+
+    &:hover &-icon {
+      background-color: $color-secondary-dark;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.navigation {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: auto;
+    text-transform: uppercase;
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: $color-grey-dark-2;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.8px;
+  }
+
+  &__list {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+
+    @media (max-width: 968px) {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-grey-dark;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      transition: all 0.2s;
+
+      &.active,
+      &:hover {
+        color: #292929;
+      }
+    }
+  }
+}

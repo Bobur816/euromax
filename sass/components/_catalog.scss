@@ -1,0 +1,109 @@
+.catalog-box {
+  background-color: $color-primary;
+  padding: 1.5rem;
+  border-radius: 30px;
+  display: grid;
+
+  grid-template-columns: 1fr 40rem;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+  color: $color-white;
+
+  &.contact {
+    @media (max-width: 1460px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info {
+    padding: 4rem;
+    // background-color: green;
+
+    &--form {
+      // background-color: red;
+      margin: 5rem 0 2.4rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 1.5rem;
+
+      input {
+        padding: 2.2rem 3rem;
+        border: none;
+        outline: none;
+        font-size: 1.8rem;
+        background-color: transparent;
+        border: 1px solid $color-white;
+        border-radius: 10px;
+        color: $color-white;
+        &[type="number"]::-webkit-inner-spin-button,
+        &[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.6);
+          opacity: 1; /* Firefox */
+        }
+
+        // &:-webkit-outer-spin-button &:-webkit-inner-spin-button {
+        //   -webkit-appearance: none;
+        //   margin: 0;
+        // }
+      }
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 160.2%;
+    }
+
+    button {
+      padding: 2.2rem 7rem;
+    }
+  }
+  &__image {
+    position: relative;
+    // background-color: red;
+    height: 100%;
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    &.contact {
+      @media (max-width: 1460px) {
+        display: none;
+      }
+    }
+    // width: 20px;
+
+    &-contact {
+      // background-color: red;
+      height: 100%;
+      width: 200px;
+      // overflow: hidden;
+      &-img {
+        @media (max-width: 1460px) {
+          display: none;
+        }
+        // display: none;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    &-img {
+      position: absolute;
+      max-width: 160%;
+      top: -59px;
+      right: -40px;
+      // transform: translate(-45%, -50%);
+    }
+  }
+}

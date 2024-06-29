@@ -1,0 +1,47 @@
+.heading {
+  font-style: normal;
+  line-height: normal;
+  &-sm {
+    font-size: 4.4rem;
+  }
+  &-md {
+    font-size: 4.6rem;
+    font-weight: 500;
+  }
+  &-lg {
+    font-size: 6rem;
+  }
+}
+
+.title {
+  &-sm {
+    font-size: 2.4rem;
+  }
+  &-md {
+    font-size: 2.8rem;
+  }
+  &-lg {
+    font-size: 3rem;
+  }
+  &-xlg {
+    font-size: 3.2rem;
+  }
+  &-xxlg {
+    font-size: 3.4rem;
+  }
+}
+
+.text {
+  &-xsm {
+    font-size: 1.4rem;
+  }
+  &-sm {
+    font-size: 1.6rem;
+  }
+  &-md {
+    font-size: 18px;
+  }
+  &-lg {
+    font-size: 20px;
+  }
+}
