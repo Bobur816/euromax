@@ -23,30 +23,59 @@
     <div class="navigation">
       <div class="container">
         <div class="navigation__box">
-          <h1 class="navigation__logo">euromax</h1>
+          <a href="#header" class="navigation__logo">euromax</a>
           <nav class="navigation__nav">
             <ul class="navigation__list">
               <li class="navigation__list-item">
-                <a href="#" class="active">Главная</a>
+                <a class="navigation__list-item_link active" href="#header"
+                  >Главная</a
+                >
               </li>
               <li class="navigation__list-item">
-                <a href="#">Каталог</a>
+                <a class="navigation__list-item_link" href="#products"
+                  >Каталог</a
+                >
               </li>
               <li class="navigation__list-item">
-                <a href="#">О нас </a>
+                <a class="navigation__list-item_link" href="#about">О нас </a>
               </li>
               <li class="navigation__list-item">
-                <a href="#">Новости и Акции</a>
+                <a class="navigation__list-item_link" href="#news"
+                  >Новости и Акции</a
+                >
               </li>
               <li class="navigation__list-item">
-                <a href="#">Контакты</a>
+                <a class="navigation__list-item_link" href="#contact"
+                  >Контакты</a
+                >
               </li>
             </ul>
           </nav>
           <div class="btns">
-            <button class="btn btn-white">
-              <img src="img/basket.svg" alt="basket-icon  " />
-            </button>
+            <div class="shop-menu">
+              <button class="btn btn-white shop-menu-btn">
+                <img src="img/basket.svg" alt="basket-icon  " />
+              </button>
+              <div class="shop-menu__box hide">
+                <ul class="shop-menu__box-list">
+                  <li class="shop-menu__box-list-item">
+                    <img src="img/product-img-1.png" alt="product-img" />
+                    <h4>Электроды МЭЗ УОНИ 13/55</h4>
+                    <button class="shop-menu__box-list-item__btn">
+                      &times;
+                    </button>
+                  </li>
+                  <li class="shop-menu__box-list-item">
+                    <img src="img/product-img-2.png" alt="product-img" />
+                    <h4>Электроды МЭЗ УОНИ 13/55</h4>
+                    <button class="shop-menu__box-list-item__btn">
+                      &times;
+                    </button>
+                  </li>
+                </ul>
+                <button class="btn btn-rectangle__white">Отправить</button>
+              </div>
+            </div>
             <button class="btn btn-white">
               <img src="img/lang-flag.svg" alt="language-flag" />
             </button>
@@ -59,7 +88,7 @@
       </div>
     </div>
 
-    <header class="header">
+    <header id="header" class="header">
       <div class="container">
         <div class="header__1">
           <div class="slider">
@@ -200,7 +229,7 @@
         </div>
       </section>
 
-      <section class="products">
+      <section id="products" class="products">
         <div class="container">
           <h2 class="heading-sm">Продукция</h2>
           <div class="products-box">
@@ -407,7 +436,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section id="about" class="about">
         <div class="container">
           <div class="about-box">
             <div class="about-box__info">
@@ -431,7 +460,7 @@
         </div>
       </section>
 
-      <section class="news">
+      <section id="news" class="news">
         <div class="container">
           <div class="news-head">
             <h2 class="heading-lg">Новости и акция</h2>
@@ -553,7 +582,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="container">
         <div class="footer-info">
           <div class="footer-info__contact">
@@ -601,6 +630,12 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
+    <script src="script2.js"></script>
   </body>
 </html>

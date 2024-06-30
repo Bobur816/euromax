@@ -25,6 +25,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 @media only screen and (max-width: 75em) {
@@ -110,7 +111,12 @@ body {
 
 .navigation {
   height: 8rem;
+  position: fixed;
   display: flex;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
 }
@@ -120,6 +126,7 @@ body {
 }
 .navigation__logo {
   margin-right: auto;
+  text-decoration: none;
   text-transform: uppercase;
   font-family: "Fira Sans Condensed", sans-serif;
   color: #4f4f4f;
@@ -144,7 +151,7 @@ body {
 .navigation__list a {
   text-decoration: none;
   color: #838383;
-  font-size: 1.8rem;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -155,7 +162,7 @@ body {
 }
 
 .header {
-  margin-top: 60px;
+  padding-top: 120px;
 }
 .header__1 {
   display: grid;
@@ -262,7 +269,7 @@ body {
 .footer {
   background-color: #3baaff;
   margin-top: 12rem;
-  padding: 7.5rem 0 2.1rem 0;
+  padding: 9rem 0 2.1rem 0;
   color: #fff;
 }
 .footer-info {
@@ -374,6 +381,12 @@ body {
   background-color: #3baaff;
   border-radius: 10px;
   color: #fff;
+  padding: 18px 50px;
+}
+.btn-rectangle__white {
+  background-color: #fff;
+  border-radius: 10px;
+  color: #3baaff;
   padding: 18px 50px;
 }
 .btn-white {
@@ -826,12 +839,91 @@ body {
   margin-left: 27px;
 }
 
+.shop-menu {
+  position: relative;
+}
+.shop-menu__box {
+  position: absolute;
+  top: 80px;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3baaff;
+  min-height: 100px;
+  width: 420px;
+  border-radius: 30px;
+  padding: 30px;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+  opacity: 1;
+}
+.shop-menu__box-list-item {
+  position: relative;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  display: flex;
+  gap: 20px;
+  padding: 13px 0;
+}
+.shop-menu__box-list-item h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-right: 30px;
+}
+.shop-menu__box-list-item img {
+  width: 13rem;
+  border-radius: 10px;
+}
+.shop-menu__box-list-item__btn {
+  position: absolute;
+  top: 13px;
+  right: 0;
+  height: 28px;
+  background-color: transparent;
+  width: 28px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: auto;
+  line-height: 100%;
+  color: #fff;
+}
+.shop-menu__box > button {
+  margin-top: 23px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.shop-menu__box.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+.shop-menu__box::before {
+  content: "";
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3baaff;
+}
+
 .categories {
   margin-top: 12rem;
 }
 
 .products {
-  margin-top: 12rem;
+  padding-top: 12rem;
 }
 .products .more {
   margin-top: 7rem;
@@ -859,10 +951,10 @@ body {
 
 .catalog {
   margin-top: 11.4rem;
+  padding-bottom: 12rem;
 }
 
 .about {
-  margin-top: 12rem;
   background-color: #eee;
   padding: 8.4rem;
 }
@@ -909,7 +1001,7 @@ body {
 }
 
 .news {
-  margin-top: 12rem;
+  padding-top: 12rem;
   overflow-x: hidden;
 }
 .news-head {

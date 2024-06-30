@@ -3,7 +3,7 @@
 }
 
 .products {
-  margin-top: 12rem;
+  padding-top: 12rem;
 
   .more {
     margin-top: 7rem;
@@ -32,10 +32,10 @@
 
 .catalog {
   margin-top: 11.4rem;
+  padding-bottom: 12rem;
 }
 
 .about {
-  margin-top: 12rem;
   background-color: $color-grey-light-2;
   padding: 8.4rem;
   &-box {
@@ -86,7 +86,7 @@
 }
 
 .news {
-  margin-top: 12rem;
+  padding-top: 12rem;
   overflow-x: hidden;
 
   &-head {

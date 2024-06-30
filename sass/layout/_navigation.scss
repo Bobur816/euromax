@@ -1,15 +1,25 @@
 .navigation {
   height: 8rem;
+  position: fixed;
   display: flex;
+  top: 0;
+  width: 100%;
+  // background-color: rgba(255, 0, 0, 0.397);
+  background-color: $color-white;
+  z-index: 2;
+  // backdrop-filter: blur(8px);
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
+
   &__box {
     display: flex;
+
     align-items: center;
   }
 
   &__logo {
     margin-right: auto;
+    text-decoration: none;
     text-transform: uppercase;
     font-family: "Fira Sans Condensed", sans-serif;
     color: $color-grey-dark-2;
@@ -34,7 +44,7 @@
     a {
       text-decoration: none;
       color: $color-grey-dark;
-      font-size: 1.8rem;
+      font-size: 18px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;

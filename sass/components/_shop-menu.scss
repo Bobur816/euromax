@@ -1,0 +1,87 @@
+.shop-menu {
+  position: relative;
+
+  &__box {
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-primary;
+    min-height: 100px;
+    width: 420px;
+    border-radius: 30px;
+    padding: 30px;
+    border: 1px solid $color-white;
+    transition: all 0.3s;
+    opacity: 1;
+
+    &-list {
+      &-item {
+        position: relative;
+        color: $color-white;
+        border-bottom: 2px solid $color-white;
+        display: flex;
+        gap: 20px;
+        padding: 13px 0;
+
+        h4 {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          padding-right: 30px;
+        }
+        img {
+          width: 13rem;
+          border-radius: 10px;
+        }
+        &__btn {
+          position: absolute;
+          top: 13px;
+          right: 0;
+          height: 28px;
+          background-color: transparent;
+          width: 28px;
+          border-radius: 50%;
+          border: 1px solid $color-white;
+          outline: none;
+          cursor: pointer;
+          font-size: 20px;
+          //   background-color: red;
+          padding: auto;
+          line-height: 100%;
+          color: $color-white;
+        }
+      }
+    }
+
+    & > button {
+      margin-top: 23px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &.hide {
+      opacity: 0;
+      visibility: hidden;
+      //   display: none;
+    }
+
+    &::before {
+      content: "";
+      clip-path: polygon(50% 0, 100% 100%, 0 100%);
+      display: inline-block;
+      position: absolute;
+      width: 25px;
+      height: 20px;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $color-primary;
+    }
+  }
+}

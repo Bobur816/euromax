@@ -30,6 +30,13 @@
     border-radius: 10px;
     color: $color-white;
     padding: 18px 50px;
+
+    &__white {
+      background-color: $color-white;
+      border-radius: 10px;
+      color: $color-primary;
+      padding: 18px 50px;
+    }
   }
 
   &-white {
